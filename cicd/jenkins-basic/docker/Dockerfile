@@ -8,8 +8,8 @@ ENV JENKINS_VERSION=2.235.5 \
     JENKINS_DATA=/var/jenkins-data \
     JENKINS_UC=https://updates.jenkins.io \
     OPENSHIFT_JENKINS_IMAGE_VERSION=3.11 \
-    LANG=en_US.UTF-8 \
-    LC_ALL=en_US.UTF-8
+    LANG=en_US.utf8 \
+    LC_ALL=en_US.utf8
 
 ARG JAVA_TOOL_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=2"
 ARG OC_VERSION=4.5.15
