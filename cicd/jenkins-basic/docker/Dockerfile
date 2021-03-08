@@ -8,8 +8,8 @@ ENV JENKINS_VERSION=2.235.5 \
     JENKINS_DATA=/var/jenkins-data \
     JENKINS_UC=https://updates.jenkins.io \
     OPENSHIFT_JENKINS_IMAGE_VERSION=3.11 \
-    LANG=en_US.utf8 \
-    LC_ALL=en_US.utf8
+    LANG=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8
 
 ARG JAVA_TOOL_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=2"
 ARG OC_VERSION=4.5.15
@@ -17,6 +17,8 @@ ARG OC_QUALIFIER=0cbc58b-linux-64bit
 ARG TINI_VERSION=v0.18.0
 ARG TINI_QUALIFIER=amd64
 ARG SWARM_CLIENT_VERSION=3.23
+
+RUN yum install -y glibc-langpack-en
 
 RUN set -x && yum -h && \
     curl -so /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo && \
