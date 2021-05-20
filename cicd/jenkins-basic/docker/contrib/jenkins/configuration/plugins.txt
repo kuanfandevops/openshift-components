@@ -21,7 +21,7 @@ blueocean-core-js:1.23.2
 blueocean-jwt:1.23.2
 blueocean-rest:1.23.2
 command-launcher:1.4
-credentials:2.3.12
+credentials:2.4.1
 echarts-api:4.8.0-2
 github-api:1.115
 monitoring:1.85.0
