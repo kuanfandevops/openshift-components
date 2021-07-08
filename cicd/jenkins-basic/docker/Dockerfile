@@ -1,4 +1,4 @@
-FROM redhat-docker-remote.artifacts.developer.gov.bc.ca/ubi8/ubi:8.3
+FROM artifacts.developer.gov.bc.ca/redhat-docker-remote/ubi8/ubi:8.3
 
 # https://blog.csanchez.org/2017/05/31/running-a-jvm-in-a-container-without-getting-killed/
 ENV JENKINS_VERSION=2.235.5 \
